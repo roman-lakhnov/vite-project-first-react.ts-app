@@ -5,6 +5,7 @@ import List from './components/List'
 import UserItem from './components/UserItem'
 import { ITodo, IUser } from './types/types'
 import TodoItem from './components/TodoItem'
+import EventsExample from './components/EventsExample'
 
 function App() {
 	const [users, setUsers] = useState<IUser[]>([])
@@ -37,6 +38,7 @@ function App() {
 
 	return (
 		<div>
+			<EventsExample/>
 			<Card width={'200px'} height={'200px'} variant={CardVariant.primary}>
 				<button>Button</button>
 				<div>HI</div>
